@@ -1,4 +1,4 @@
 class Idea < ActiveRecord::Base
-  shenmount uploader :picture, PictureUploader
+  mount_uploader :picture, PictureUploader
   attr_accessible :description, :name, :picture
 end
